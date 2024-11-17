@@ -1,0 +1,56 @@
+.about
+
+	&__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-top: 55px
+
+	&__left,
+	&__right
+		flex: 0 0 50%
+		max-width: 50%
+
+	&__left
+		padding-right: 20px
+
+	&__right
+		padding-top: 20px
+		padding-left: 20px
+
+	&__img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+	&__title
+		margin-bottom: 40px
+		color: $cloud-burst
+		font-size: 26px
+		font-weight: 700
+		line-height: 34px
+
+	&__info
+		display: flex
+		align-items: center
+		margin-bottom: 40px
+		padding: 28px 23px
+		border: 1px solid $ziggurat
+		border-radius: 12px
+
+	&__logo
+		width: 75px
+		height: 75px
+		margin-right: 25px
+		background: url('../images/dist/adwards.svg') no-repeat
+		background-position-y: center
+
+	&__recommendation
+		margin-bottom: 0
+		color: $cloud-burst
+		line-height: 38px
+
+	&__desc
+		color: $cloud-burst
+		font-family: $roboto
+		line-height: 28px

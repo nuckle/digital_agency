@@ -1,0 +1,28 @@
+.results-list
+	display: grid
+	grid-gap: 0 40px
+	grid-template-columns: repeat(2, 1fr)
+
+	&__desc
+		max-width: 600px
+		margin-bottom: 0
+		font-weight: 700
+		line-height: 28px
+
+	&__item
+		display: flex
+		align-items: center
+
+		&:not(:nth-last-of-type(-n+2))
+			margin-bottom: 60px
+
+
+		&::before
+			min-width: 60px
+			min-height: 60px
+			margin-right: 20px
+			background-image: url('../images/dist/trophy.svg')
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			content: ''

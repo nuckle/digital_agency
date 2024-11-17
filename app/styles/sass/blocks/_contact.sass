@@ -1,0 +1,227 @@
+[class*='copyrights-pane']
+	display: none !important
+
+[class*='inner-panes']
+	border-radius: 12px
+
+
+
+.contact
+	display: flex
+	margin-bottom: 40px
+
+	&__map
+		width: 100%
+		height: 320px
+		background: url('../images/dist/map.png') no-repeat
+		background-position: center
+		background-size: cover
+
+	&__logo
+		display: block
+		margin-bottom: 40px
+
+	&__title
+		margin-bottom: 24px
+		color: $white
+		font-size: 38px
+		font-weight: 900
+		line-height: 40px
+
+	&__desc
+		margin-bottom: 40px
+		color: $white
+		font-size: 20px
+		font-weight: 400
+		line-height: 26px
+
+	&__data,
+	&__form-container
+		flex: 0 0 50%
+		max-width: 50%
+
+	&__data
+		padding-right: 20px
+
+	&__form-container
+		padding-left: 20px
+
+	&__form
+		display: flex
+		flex-direction: column
+		height: 100%
+		padding: 60px
+		border-radius: 12px
+		background-color: $accent
+
+	&__input,
+	&__textarea
+		width: 100%
+		margin-bottom: 20px
+		border: 2px solid $ziggurat
+		border-radius: 12px
+		background: 0
+		color: $ziggurat
+		font-size: 16px
+
+		&::placeholder
+			color: $ziggurat
+			opacity: 1
+
+	&__input
+		padding: 15px 32px
+
+	&__textarea
+		padding: 18px 32px 46px
+		resize: none
+
+	&__submit-wrapper
+		display: grid
+		grid-template-columns: 41% 59%
+
+	&__check-wrapper
+		display: flex
+		align-items: center
+
+	&__btn
+		position: relative
+		margin-right: 20px
+		padding: 16px 42px
+		border: 2px solid $white
+		border-radius: 12px
+		background: $white
+		color: $accent
+		font-size: 16px
+		font-weight: 700
+		line-height: 24px
+		text-align: left
+
+		&::before
+			position: absolute
+			top: 50%
+			right: 42px
+			transform: translateY(-50%)
+			content: url('../images/dist/arrow.svg')
+
+		&:hover,
+		&:focus,
+		&:active
+			&::before
+				animation: arrow 1s ease-in-out infinite
+
+	&__checkbox
+		position: absolute
+		opacity: 0
+		z-index: -1
+
+	&__checkbox:checked+.contact__label::before
+		background: $accent
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+
+	&__label
+		display: inline-flex
+		align-items: center
+		color: $ziggurat
+		font-size: 16px
+		font-weight: 400
+		line-height: 24px
+		user-select: none
+
+		&::before
+			display: inline-block
+			flex-grow: 0
+			flex-shrink: 0
+			width: 20px
+			height: 20px
+			margin-right: 12px
+			border: 2px solid $white
+			border-radius: 4px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: 50% 50%
+			content: ''
+
+	&__label-text
+		margin-bottom: 0
+
+	&__label-link
+		color: inherit
+
+		&:hover,
+		&:active,
+		&:focus
+			color: inherit
+
+	&__grid
+		display: grid
+		margin-bottom: 45px
+		grid-template-columns: repeat(2, 1fr)
+
+	&__phone
+		color: $accent
+		font-size: 26px
+		font-weight: 600
+		line-height: 34px
+
+		&:first-of-type
+			grid-column: 1 / 1
+
+	&__wrapper
+
+		&--phone
+			display: grid
+			grid-template-columns: repeat(2, 1fr)
+
+		&:first-child
+			margin-bottom: 40px
+			grid-column: 1 / 3
+
+	&__name,
+	&__email,
+	&__address
+		margin-bottom: 0
+		font-size: 20px
+		font-weight: 600
+		line-height: 28px
+
+	&__name
+		margin-bottom: 16px
+		color: $bali-hai
+
+
+	&__email
+		color: $accent
+		text-decoration-skip-ink: none
+
+	&__address
+		color: $gun-power
+
+	&__input-wrapper
+		width: 100%
+		margin-bottom: 20px
+		border: 2px solid $white
+		border-radius: 12px
+
+		&--error
+			border-color: $salmon
+
+	&__input--phone
+		border: 0
+
+
+.iti
+	margin-left: 20px
+
+	&__selected-flag
+		color: $white
+		font-size: 16px
+		font-weight: 400
+
+	&__arrow
+		border-top-color: $white
+
+		&--up
+			border-bottom-color: $white
+
+.iti--separate-dial-code .iti__selected-flag
+	background: none

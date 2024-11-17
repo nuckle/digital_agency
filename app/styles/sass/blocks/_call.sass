@@ -1,0 +1,37 @@
+.call
+	display: flex
+	justify-content: space-between
+	margin-bottom: 160px
+	padding: 60px 108px 52px 60px
+	border-radius: 12px
+	background: $accent
+
+	&__title
+		max-width: 620px
+		margin-bottom: 40px
+		color: $white
+		font-size: 38px
+		font-weight: 900
+		line-height: 46px
+
+	&__desc
+		margin-bottom: 0
+		color: $white
+		font-size: 26px
+		line-height: 34px
+
+	&__number
+		align-self: center
+		transition: .25s border-color ease-out, .25s color ease-out
+		border-bottom: 6px solid $white
+		color: $white
+		font-size: 68px
+		font-weight: 700
+		line-height: 79px
+		text-decoration: none
+
+		&:hover,
+		&:active,
+		&:focus
+			border-color: $ziggurat
+			color: $ziggurat

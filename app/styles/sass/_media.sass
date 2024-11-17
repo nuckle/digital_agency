@@ -1,0 +1,1022 @@
+@media (min-width: 320px)
+	.container
+		width: 100%
+		max-width: 100%
+
+
+
+@media (min-width: 576px)
+	.container
+		max-width: 540px
+
+
+
+@media (min-width: 768px)
+	.container
+		max-width: 720px
+
+
+
+@media (min-width: 992px)
+	.container
+		max-width: 960px
+
+
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1140px
+
+
+
+@media (min-width: 1400px)
+	.container
+		max-width: 1430px
+
+	.header
+
+		&__container
+			max-width: 100%
+
+
+
+
+@media (max-width: 1800px)
+	.header
+
+		&__container
+			grid-template-columns: 40% 40% 20%
+
+
+
+@media (max-width: 1600px)
+
+	.body--mobile
+		position: relative
+		overflow: hidden
+
+
+	.header
+		background: $white
+
+		&--mobile
+			position: fixed
+			width: 100%
+			height: 100%
+			background: $white
+			overflow-y: auto
+
+			&::after
+				position: absolute
+				top: 80px
+				width: 100%
+				height: 1px
+				background: $ziggurat
+				content: ''
+
+		&__container
+			padding-top: 28px
+			padding-bottom: 28px
+			grid-template-columns: 1fr 1fr auto
+
+			&--mobile
+				grid-template-columns: 1fr 1fr
+
+		&__nav
+			display: none
+
+			&--mobile
+				display: inherit
+				grid-column: 1 / 2
+				grid-row: 2 / 2
+
+		&__logo
+			background-image: url('../images/dist/logo-dark.svg')
+
+
+	.nav
+
+		&__item
+			&:not(:last-child)
+				margin-right: 0
+				margin-bottom: 32px
+
+		&__link
+			padding-bottom: 0
+			color: $bali-hai
+
+			&::after
+				display: none
+
+			&:hover,
+			&:focus,
+			&:active
+				color: $ziggurat
+
+		&__list
+			margin-top: 43px
+			margin-bottom: 40px
+
+			&--mobile
+				flex-direction: column
+
+
+	.header-btns
+		justify-content: flex-end
+
+		&__link,
+		&__btn
+			margin-right: 24px
+			border-color: $accent
+
+		&__link
+			color: $accent
+
+		&__btn
+			color: $bali-hai
+
+		&--mobile
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			width: 288px
+			grid-column: 1 / 2
+			grid-row: 3 / 3
+
+			.header-btns
+
+				&__link,
+				&__btn
+					margin-right: 0
+					padding: 10px 24px
+					border-radius: 12px
+
+				&__link
+					margin-bottom: 24px
+
+
+	.burger
+		display: block
+		position: relative
+
+		&--active
+			margin-left: auto
+			grid-column: 2 / 2
+			grid-row: 1 / 1
+
+
+	.price-attention
+		width: 100%
+
+
+
+@media (max-width: 1400px)
+	.header
+
+		&__container
+			padding: 28px 15px
+
+
+	.advertising
+
+		&__icon
+			margin: 0 auto 20px
+
+		&__subtitle
+			width: 220px
+			font-size: 16px
+
+
+	.about
+
+		&__info
+			align-items: self-start
+
+		&__recommendation
+			font-size: 16px
+			line-height: 24px
+
+	.pricing
+
+		&__wrapper
+			min-height: 40px
+			margin: 0 20px
+			font-size: 16px
+			line-height: 20px
+
+		&__row
+			width: 340px
+
+			&:first-of-type
+				margin-right: 20px
+
+				.pricing__wrapper
+					margin-right: 0
+					margin-left: 0
+
+			&:nth-last-of-type(2)
+				margin-right: 20px
+
+
+	.call
+
+		&__title
+			max-width: 400px
+			margin-bottom: 24px
+			font-size: 28px
+			line-height: 36px
+
+		&__number
+			font-size: 40px
+			line-height: 48px
+
+		&__desc
+			font-size: 18px
+
+
+	.contact
+
+		&__email,
+		&__phone,
+		&__address
+			font-size: 18px
+
+		&__btn
+			margin-right: 0
+			margin-bottom: 20px
+			text-align: center
+
+			&::before
+				right: 30%
+
+		&__submit-wrapper
+			grid-template-columns: 1fr
+
+
+@media (max-width: 1200px)
+	.about
+
+		&__info
+			padding: 16px
+
+		&__logo
+			width: 95px
+
+
+	.container
+		padding-right: 8px
+		padding-left: 8px
+
+
+	.pricing
+
+		&__head
+			min-height: 139px
+
+		&__desc
+			font-size: 16px
+			line-height: 24px
+
+		&__row
+			width: 302px
+
+		&__btn
+			width: 100%
+
+		&__wrapper
+
+			&--btn
+				padding: 0
+				padding-bottom: 20px
+
+
+	.offers-list
+
+		&__item
+
+			&:not(:last-of-type)
+				margin-right: 20px
+
+
+	.google-ad-list
+
+		&__title
+			margin-bottom: 12px
+			font-size: 18px
+
+		&__text
+			padding-right: 10px
+			font-size: 16px
+
+		&__img
+			padding-left: 10px
+
+
+	.steps-grid
+
+		&__icon
+			margin-bottom: 20px
+
+		&__title
+			margin-bottom: 12px
+			font-size: 18px
+
+		&__desc
+			font-size: 16px
+			line-height: 24px
+
+
+	.results-list
+
+		&__desc
+			font-size: 16px
+			line-height: 24px
+
+		&__item
+
+			&:not(:nth-last-of-type(-n+2))
+				margin-bottom: 40px
+
+
+	.call
+		padding: 60px 96px 60px 60px
+
+
+
+@media (max-width: 992px)
+
+	.about
+
+		&__logo
+			width: 160px
+
+		&__right
+			max-height: 365px
+			padding-right: 16px
+			overflow-y: scroll
+
+		&__title
+			margin-bottom: 24px
+			font-size: 18px
+			line-height: 26px
+
+		&__desc
+			font-size: 16px
+			line-height: 24px
+
+
+	.advertising
+
+		&__subtitle
+			width: 160px
+
+
+	.offers-list
+
+		&__title
+			font-size: 18px
+			line-height: 26px
+
+		&__wrapper
+			display: inline-flex
+
+		&__item
+			width: 100%
+
+		&__desc
+			font-size: 16px
+			line-height: 24px
+
+
+	.pricing
+
+		&__wrapper
+
+			&--head
+				padding-right: 0
+
+			&--btn
+				padding-right: 0
+
+		&__logo
+			height: 44px
+
+			&--small
+
+				&::after
+					margin: 11px 15px
+
+			&--medium
+
+				&::after
+					margin: 11px 8px
+
+		&__title
+			font-size: 18px
+
+		&__row
+			width: 220px
+
+			&:first-of-type
+				.pricing__wrapper
+					padding-right: 5px
+					padding-left: 10px
+
+		&__btn
+			width: 100%
+			padding: 16px 0
+			padding-left: 33px
+			text-align: left
+
+			&::after
+				right: 32px
+
+
+	.google-ad-list
+
+		&__item
+			align-items: start
+
+
+	.steps-grid
+
+		&__wrapper
+			display: inline-flex
+			grid-gap: 0
+
+		&__item
+			width: 100%
+			margin-bottom: 22px
+
+		&__navigation
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		&__pagination
+			display: flex
+			justify-content: center
+
+		&__bullet
+			display: block
+			width: 10px
+			height: 10px
+			margin: 0 5px
+			transition: background .25s ease
+			border-radius: 10px
+			background: $ziggurat
+			cursor: pointer
+
+			&:first-of-type
+				margin-left: 0
+
+			&:last-of-type
+				margin-right: 0
+
+			&--current
+				background: $accent
+
+		&__prev,
+		&__next
+			width: 40px
+			height: 40px
+			transition: border-color .25s ease
+			border: 2px solid $ziggurat
+			border-radius: 20px
+			background: url('../images/dist/chevron.svg') no-repeat
+			background-position: 10px
+			background-size: 11px 18px
+			cursor: pointer
+
+			&:hover,
+			&:active,
+			&:focus
+				border-color: $accent
+
+		&__next
+			transform: rotate(180deg)
+
+
+	.results
+
+		&__container
+			padding-bottom: 40px
+
+
+	.call
+		margin-bottom: 80px
+		padding: 40px 64px 40px 40px
+
+		&__title
+			max-width: 290px
+
+		&__number
+			font-size: 32px
+
+
+	.footer-grid
+		grid-template-columns: repeat(4, 1fr)
+
+		&__item
+
+			&:nth-last-of-type(2)
+				grid-column: 2 / 2
+
+			&:nth-last-of-type(1)
+				grid-column: 3 / 3
+
+
+	.contact
+
+		&__map
+			height: 215px
+
+		&__grid
+			grid-template-columns: 1fr
+
+		&__wrapper
+
+			&:first-child
+				margin-bottom: 32px
+				grid-column: 1
+
+			&--phone
+				grid-template-columns: 1fr
+
+			&--email
+				margin-bottom: 32px
+
+		&__form
+			padding: 40px 40px 15px
+
+
+	.footer
+		padding-bottom: 24px
+
+
+
+@media (max-width: 767px)
+
+	.container
+		padding-right: 16px
+		padding-left: 16px
+
+
+	.header
+
+		&__container
+			padding-top: 14px
+			padding-bottom: 14px
+
+		&__logo
+			width: 113px
+
+
+	.header-btns
+		display: none
+
+		&--mobile
+			display: flex
+			width: 100%
+			grid-column: 1 / 3
+
+
+	.burger
+		margin-left: auto
+
+
+	.hero-bg
+		background: none
+
+
+	.hero
+		padding: 40px 0 65px
+		background-image: url('../images/dist/hero-bg-mobile.jpg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+
+		&__title
+			width: 90%
+			font-size: 32px
+			line-height: 40px
+
+		&__desc
+			width: 90%
+			font-size: 16px
+
+	.about
+
+		&__container
+			flex-direction: column
+
+		&__left,
+		&__right
+			max-width: 100%
+			padding: 0
+
+		&__right
+			max-height: 100%
+			overflow-y: auto
+
+		&__logo
+			margin-bottom: 8px
+
+		&__info
+			flex-direction: column
+			margin-bottom: 20px
+
+
+	.advertising
+
+		&__container
+			padding-top: 80px
+			padding-bottom: 80px
+
+		&__title
+			max-width: 90%
+			margin: 0 auto
+			margin-bottom: 32px
+			font-size: 28px
+			line-height: 36px
+
+		&__grid
+			grid-gap: 10px
+			grid-template-columns: repeat(2, 1fr)
+
+		&__item
+
+			&:nth-of-type(-n + 2)
+				margin-bottom: 22px
+
+
+		&__icon
+			padding: 6px
+
+			img
+				width: 48px
+				height: 48px
+
+
+		&__subtitle
+			width: 100%
+			font-size: 16px
+			line-height: 24px
+
+
+	.price
+
+		&__title
+			max-width: 100%
+			margin-bottom: 32px
+			font-size: 28px
+			line-height: 36px
+
+
+	.pricing
+
+		&__title
+			margin-bottom: 8px
+			font-size: 18px
+			font-weight: 700
+			line-height: 23px
+
+		&__desc,
+		&__price
+			font-size: 16px
+			line-height: 26px
+
+		&__head
+			min-height: 115px
+
+		&__body
+			flex-direction: column
+
+		&__row
+			display: block
+			width: 100%
+
+			&:not(:last-of-type)
+				margin-bottom: 10px
+
+			&:first-child
+				display: none
+
+		&__wrapper
+			padding: 6px 10px
+			font-size: 14px
+			line-height: 20px
+
+			&--resize
+				display: grid
+				grid-template-columns: 90px 1fr
+
+			&--btn
+				padding: 0
+				padding-bottom: 20px
+
+			&--head
+				padding: 20px 0
+
+		&__category
+
+			&--mobile
+				display: block
+				color: $gun-power
+				font-size: 12px
+				font-weight: 700
+				line-height: 16px
+				text-align: left
+
+		&__icon
+			margin-right: 50px
+			margin-left: auto
+
+		&__btn
+			padding: 12px 0 12px 69px
+
+			&::after
+				right: 68px
+
+
+	.price-attention
+		padding: 20px
+
+		&__desc
+			flex-direction: column
+			font-size: 16px
+			line-height: 26px
+
+			&::before
+				width: 24px
+				height: 24px
+				margin-right: auto
+				margin-bottom: 10px
+				content: url('../images/dist/info-small.svg')
+
+
+	.google-ad-about
+
+		&__container
+			padding-top: 0
+			padding-bottom: 40px
+
+		&__title
+			font-size: 28px
+			line-height: 36px
+
+
+	.google-ad-list
+
+		&__btn
+			display: inline
+			padding: 0
+			border: 0
+			background: 0
+			color: $accent
+			font-size: 16px
+			font-weight: 600
+			text-decoration: underline
+			cursor: pointer
+
+		&__item
+			flex-direction: column-reverse
+			margin-bottom: 32px
+
+			&:nth-of-type(2n)
+				flex-direction: column-reverse
+
+				.google-ad-list__text,
+				.google-ad-list__img
+					padding: 0
+
+		&__text,
+		&__img
+			max-width: 100%
+			padding: 0
+
+		&__img
+			margin-bottom: 15px
+
+		&__title
+			margin-bottom: 15px
+
+		&__desc
+			display: none
+			margin-bottom: 4px
+
+			&--shown
+				display: block
+
+			&:first-of-type
+				display: block
+
+
+	.offers
+
+		&__container
+			padding-top: 40px
+
+		&__title
+			margin-bottom: 70px
+			font-size: 28px
+			line-height: 36px
+
+
+	.offers-list
+
+		&__item
+			margin-bottom: 20px
+
+		&__navigation
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		&__pagination
+			display: flex
+			justify-content: center
+
+		&__bullet
+			display: block
+			width: 10px
+			height: 10px
+			margin: 0 5px
+			transition: background .25s ease
+			border-radius: 10px
+			background: $bali-hai
+			cursor: pointer
+
+			&:first-of-type
+				margin-left: 0
+
+			&:last-of-type
+				margin-right: 0
+
+			&--current
+				background: $accent
+
+		&__prev,
+		&__next
+			width: 40px
+			height: 40px
+			transition: border-color .25s ease
+			border: 2px solid $accent
+			border-radius: 20px
+			background: url('../images/dist/chevron.svg') no-repeat
+			background-position: 10px
+			background-size: 11px 18px
+			cursor: pointer
+
+			&:hover,
+			&:active,
+			&:focus
+				border-color: $white
+
+		&__next
+			transform: rotate(180deg)
+
+
+	.steps
+
+		&__container
+			padding-top: 40px
+			padding-bottom: 0
+
+		&__title
+			margin-bottom: 32px
+			font-size: 28px
+			line-height: 36px
+
+
+	.results
+
+		&__container
+			padding-top: 80px
+			padding-bottom: 40px
+
+		&__title
+			margin-bottom: 32px
+			font-size: 28px
+			line-height: 36px
+
+
+	.results-list
+		grid-template-columns: 1fr
+
+		&__item
+
+			&:not(&:last-of-type)
+				align-items: flex-start
+				margin-bottom: 20px
+
+			&:not(:nth-last-of-type(-n+2))
+				margin: 0
+
+
+	.footer
+
+		&__container
+			padding-top: 40px
+
+		&__title
+			margin-bottom: 32px
+			font-size: 28px
+			line-height: 36px
+
+
+	.footer-grid
+		margin-bottom: 32px
+		grid-auto-rows: 1fr
+		grid-template-columns: repeat(2, 1fr)
+		grid-gap: 10px
+
+		&__item
+
+			&:nth-last-of-type(2)
+				grid-column: auto
+
+			&:nth-last-of-type(1)
+				grid-column: auto
+
+
+	.call
+		flex-direction: column
+		padding: 40px 20px
+
+		&__title
+			max-width: 100%
+			font-size: 28px
+			line-height: 36px
+
+		&__desc
+			margin-bottom: 24px
+			font-size: 14px
+			line-height: 24px
+
+		&__number
+			border-bottom: 2px solid $white
+			font-size: 28px
+			line-height: 36px
+
+
+	.contact
+		flex-direction: column-reverse
+
+		&__form-container
+			max-width: 100%
+			padding: 0
+
+		&__input
+			padding: 12px 22px
+
+		.iti
+			margin-left: 12px
+
+		&__textarea
+			padding: 18px 22px 46px
+
+		&__form
+			margin-bottom: 40px
+			padding: 40px 20px
+
+		&__data
+			max-width: 100%
+			padding: 0
+
+		&__title
+			margin-bottom: 16px
+			font-size: 28px
+			line-height: 36px
+
+		&__desc
+			margin-bottom: 20px
+
+		&__btn
+			margin-bottom: 10px
+			padding: 12px 50px 12px 62px
+			text-align: left
+
+			&::before
+				right: 62px
+
+		&__logo
+			height: 32px
+			margin-bottom: 32px
+
+			img
+				max-height: 100%
+
+		&__name
+			margin-bottom: 8px
+
+		&__wrapper
+
+			&:first-child
+				margin-bottom: 20px
+
+			&--email
+				margin-bottom: 20px
+
+		&__grid
+			margin-bottom: 24px

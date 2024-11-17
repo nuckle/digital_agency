@@ -1,0 +1,36 @@
+.header-btns
+	display: flex
+	text-align: center
+
+	&__link
+		margin-right: auto
+		padding: 10px 24px
+		transition: .25s color ease, .25s background ease
+		border: 1px solid $white
+		border-radius: 12px
+		color: $white
+		font-size: 16px
+		font-weight: 700
+		text-decoration: none
+
+		&:hover,
+		&:active,
+		&:focus
+			background: $white
+			color: $gun-power
+
+	&__btn
+		padding: 0 22px
+		transition: .25s color ease, .25s background ease
+		border: 1px solid $ziggurat
+		border-radius: 12px
+		background: transparent
+		color: $ziggurat
+		font-size: 16px
+		font-weight: 700
+
+		&:hover,
+		&:active,
+		&:focus
+			background: $ziggurat
+			color: $gun-power

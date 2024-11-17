@@ -1,0 +1,44 @@
+.nav
+
+	&__list
+		display: flex
+		height: 100%
+		margin-top: 14px
+
+	&__item
+
+		&:not(:last-child)
+			margin-right: 41px
+
+	&__link
+		display: flex
+		position: relative
+		align-items: center
+		padding-bottom: 35px
+		transition: .25s color ease
+		color: $ziggurat
+		font-size: 16px
+		text-decoration: none
+
+		&::after
+			display: block
+			position: absolute
+			bottom: 0
+			width: 100%
+			transform: scaleX(0)
+			transition: transform .25s ease-in-out
+			border-bottom: solid 4px $white
+			content: ''
+
+		&--active
+			&::after
+				transform: scaleX(1)
+
+		&:hover,
+		&:active,
+		&:focus
+
+			color: $white
+
+			&::after
+				transform: scaleX(1)

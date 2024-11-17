@@ -1,0 +1,73 @@
+// USER VARIABLES SECTION
+
+$accent: #376FFF // Accent Color
+$salmon: #FF7C7C //Salmon color
+$white: #FFF // White Color
+$ziggurat: #C1D3DE // Ziggurat Color
+$gun-power: #393A56 // Gun Powder Color
+$cloud-burst: #242A56 // Cloud Burst Color
+$bali-hai: #8B9BAB // Bali Hai Color
+$trout: #4B4C5A // Trout Color
+$fontsize: 20px // Body Font Size
+$textcolor: $gun-power // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: Inter, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$roboto: Roboto, sans-serif // Roboto Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+$flagsImagePath: '../images/dist/' // Flags for International Telephone Input
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+//@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/intl-tel-input/src/css/intlTelInput' // International Telephone Input
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+
+@include font('Inter', normal, 400, '../fonts/Inter-Regular.woff2')
+@include font('Inter', italic, 400, '../fonts/Inter-Italic.woff2')
+@include font('Inter', normal, 600, '../fonts/Inter-SemiBold.woff2')
+@include font('Inter', normal, 700, '../fonts/Inter-Bold.woff2')
+@include font('Inter', normal, 900, '../fonts/Inter-Black.woff2')
+
+@include font('Roboto', normal, 400, '../fonts/Roboto-Regular.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
